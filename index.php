@@ -77,4 +77,26 @@ $results = $query->fetchAll();
 
 var_dump($results);
 
+foreach($results as $user) {
+    echo '<h2 class="player_name">' . $user['player_first_name'] . ' ' . $user['player_last_name'] . '</h2>';
+}
 
+foreach($results as $user) {
+    echo '<h2 class="club">' . $user['club'] . ' </h2>';
+}
+
+foreach($results as $user) {
+    echo '<p class="position">' . 'Position: ' . $user['position'] . ' </p>';
+}
+
+foreach($results as $user) {
+    echo '<p class="DOB">' . 'DOB: ' . $user['DOB'] . ' </p>';
+}
+
+foreach($results as $user) {
+    echo '<p class="height">' . 'Height: ' . $user['height'] . ' m' . ' </p>';
+}
+
+foreach($results as $user) {
+    echo '<p class="weight">' . 'Weight: ' . $user['weight'] . ' kg' . ' </p>';
+}

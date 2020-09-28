@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -19,5 +19,5 @@
             <p>Welcome to my awesome collection of Australian Rules Football player cards. Click on 'Collection' to browse through. Each card displays the photo and stats of the some of the best players in the league.</p>
      </section>
     </body>
-</html>body
+</html>
 <?php
