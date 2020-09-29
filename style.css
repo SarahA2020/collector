@@ -1,0 +1,40 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 62.5%;
+	background-color: #eeeeee;
+}
+
+h1 {
+	color: #515151;
+	font-family: 'Oxygen', Arial, sans-serif;
+	font-size: 2rem;
+	text-align: center;
+
+}
+
+.intro {
+	color: #515151;
+	font-family: 'Oxygen', Arial, sans-serif;
+	font-size: 1rem;
+}
+
+.grid_container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px 10px;
+}
+
+.card {
+	border: solid 1px red;
+
+}
+
+.card_top {
+	text-align: center;
+}
+
