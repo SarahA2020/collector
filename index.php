@@ -4,7 +4,7 @@ $db = new PDO('mysql:host=db;dbname=AFL Player Cards', 'root', 'password');
 
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
-$query = $db->prepare('SELECT `player_first_name`, `player_last_name`, `club`, `position`, `DOB`, `height`, `weight` FROM `card_details`;');
+$query = $db->prepare('SELECT `player_first_name`, `player_last_name`, `club`, `image`, `position`, `DOB`, `height`, `weight` FROM `card_details`;');
 
 $query->execute();
 
@@ -19,7 +19,7 @@ $results = $query->fetchAll();
         <title>AFL Player Cards Collection</title>
         <link href="normalize.css" type="text/css" rel="stylesheet">
         <link href="style.css" type="text/css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kulim+Park&family=Poppins&family=Ubuntu&display=swap" rel="stylesheet">
         <meta name=’viewport” content=”width=device-width, initial-scale=0.1”>
     </head>
 
@@ -35,9 +35,9 @@ $results = $query->fetchAll();
                 echo '<div class="card ' . str_replace(' ', '_',$player['club']) . '">';
                 echo '<div class="card_top">';
                 echo '<h2 class="player_name">' . $player['player_first_name'] . ' ' . $player['player_last_name'] . '</h2>';
-                echo '<h2 class="club">' . $player['club'] . ' </h2>';
+                echo '<h3 class="club">' . $player['club'] . ' </h3>';
                 echo '</div>';
-                echo '<img>';
+                echo '<img src="' . $player['image'] . '">';
                 echo '<div class="stats">';
                 echo '<p class="position">' . 'Position: ' . $player['position'] . ' </p>';
                 echo '<p class="DOB">' . 'DOB: ' . $player['DOB'] . ' </p>';
