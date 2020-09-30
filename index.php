@@ -8,7 +8,9 @@ $query = $db->prepare('SELECT `player_first_name`, `player_last_name`, `club`, `
 
 $query->execute();
 
-$results = $query->fetchAll();
+$player_cards = $query->fetchAll();
+
+include('includes/functions.php');
 
 ?>
 
@@ -32,20 +34,8 @@ $results = $query->fetchAll();
 
             <?php
 
-            foreach($results as $player) {
-                echo '<div class="card ' . str_replace(' ', '_',$player['club']) . '">';
-                echo '<div class="card_top">';
-                echo '<h2 class="player_name">' . $player['player_first_name'] . ' ' . $player['player_last_name'] . '</h2>';
-                echo '<h3 class="club">' . $player['club'] . ' </h3>';
-                echo '</div>';
-                echo '<img src="' . $player['image'] . '">';
-                echo '<div class="stats">';
-                echo '<p class="position">' . 'Position: ' . $player['position'] . ' </p>';
-                echo '<p class="DOB">' . 'DOB: ' . $player['DOB'] . ' </p>';
-                echo '<p class="height">' . 'Height: ' . $player['height'] . ' m' . ' </p>';
-                echo '<p class="weight">' . 'Weight: ' . $player['weight'] . ' kg' . ' </p>';
-                echo '</div>';
-                echo '</div>';
+            foreach($player_cards as $new_player_card) {
+                echo display_card($new_player_card);
             }
 
             ?>
