@@ -15,3 +15,11 @@ function display_card($player) {
             '</div>' .
             '</div>';
 }
+
+// $input ['club' => dog, 'player_first_name' => cat, 'player_last_name' => bird, 'image' => deer, 'position' => rabbit, 'DOB' => turtle, 'height' => wolf, 'weight' => gorilla]
+
+// expected output '<div class="card_top"><h2 class="player_name">cat bird</h2><h3 class="club">dog </h3></div><img src="deer"><div class="stats"><p class="position">Position: rabbit </p><p class="DOB">DOB: turtle </p><p class="height">Height: wolf m </p><p class="weight">Weight: gorilla kg </p></div>'
+
+//'<div class="card_top"><h2 class="player_name">cat bird</h2><h3 class="club">dog </h3></div><img src="deer"><div class="stats"><p class="position">Position: rabbit </p><p class="DOB">DOB: turtle </p><p class="height">Height: wolf m </p><p class="weight">Weight: gorilla kg </p></div>'
+//
+//+'<div class="card dog"><div class="card_top"><h2 class="player_name">cat bird</h2><h3 class="club">dog </h3></div><img src="deer"><div class="stats"><p class="position">Position: rabbit </p><p class="DOB">DOB: turtle </p><p class="height">Height: wolf m </p><p class="weight">Weight: gorilla kg </p></div></div>'
