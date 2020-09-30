@@ -11,8 +11,9 @@ body {
 
 h1 {
 	color: #2c2c2c;
-	font-family: 'Poppins', Arial, sans-serif;
+	font-family: 'Rubik', Arial, sans-serif;
 	font-size: 2rem;
+	text-transform: uppercase;
 	text-align: center;
 
 }
@@ -28,7 +29,6 @@ h1 {
 
 .grid_container {
 	display: grid;
-	margin: 4% 2%;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 40px 28px;
 	align-self: center;
@@ -58,7 +58,7 @@ h1 {
 
 .card {
 	border: solid 10px;
-	border-radius: 10px;
+	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

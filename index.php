@@ -19,6 +19,7 @@ $results = $query->fetchAll();
         <title>AFL Player Cards Collection</title>
         <link href="normalize.css" type="text/css" rel="stylesheet">
         <link href="style.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Kulim+Park&family=Poppins&family=Ubuntu&display=swap" rel="stylesheet">
         <meta name=’viewport” content=”width=device-width, initial-scale=0.1”>
     </head>
@@ -48,8 +49,6 @@ $results = $query->fetchAll();
             }
 
             ?>
-
-
 
         </section>
 
