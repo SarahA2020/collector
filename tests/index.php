@@ -107,9 +107,8 @@ class Index extends TestCase
     }
 
    public function testMalformedDisplayCard()
-       // my datatype is a string but I have passed an integer
+       // my datatype is an array but I have deliberately passed the wrong datatype, an integer
    {
-       // For the malformed test we are essentially saying does the input data
        $input = 10;
        $this->expectException(TypeError::class);
 
