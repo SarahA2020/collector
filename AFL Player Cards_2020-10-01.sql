@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.31)
 # Database: AFL Player Cards
-# Generation Time: 2020-09-28 10:51:25 +0000
+# Generation Time: 2020-10-01 11:04:44 +0000
 # ************************************************************
 
 
@@ -30,6 +30,7 @@ CREATE TABLE `card_details` (
   `player_first_name` varchar(50) DEFAULT NULL,
   `player_last_name` varchar(50) DEFAULT NULL,
   `club` varchar(50) DEFAULT NULL,
+  `image` char(255) DEFAULT NULL,
   `position` varchar(50) DEFAULT NULL,
   `DOB` date DEFAULT NULL,
   `height` decimal(3,2) DEFAULT NULL,
@@ -40,14 +41,20 @@ CREATE TABLE `card_details` (
 LOCK TABLES `card_details` WRITE;
 /*!40000 ALTER TABLE `card_details` DISABLE KEYS */;
 
-INSERT INTO `card_details` (`id`, `player_first_name`, `player_last_name`, `club`, `position`, `DOB`, `height`, `weight`)
+INSERT INTO `card_details` (`id`, `player_first_name`, `player_last_name`, `club`, `image`, `position`, `DOB`, `height`, `weight`)
 VALUES
-	(1,'Christian','Petracca','Melbourne Demons','Midfield','1996-01-04',1.86,96),
-	(2,'Dustin','Martin','Richmond Tigers','Midfield','1991-06-26',1.87,86),
-	(3,'Nat','Fyfe','Fremantle Dockers','Forward','1991-09-18',1.90,96),
-	(4,'Tom','Hawkins','Geelong Cats','Full Forward','1988-07-21',1.98,101),
-	(5,'James','Siciliy','Hawthorn Hawks','Defender','1995-01-06',1.89,73),
-	(6,'Brodie','Grundy','Collingwood Magpies','Ruckman','1994-04-15',2.02,100);
+	(1,'Christian','Petracca','Melbourne Demons','images/christian_petracca.jpg','Midfield','1996-01-04',1.86,96),
+	(2,'Dustin','Martin','Richmond Tigers','images/dusty_martin.jpg','Midfield','1991-06-26',1.87,86),
+	(3,'Nat','Fyfe','Fremantle Dockers','images/nat_fyfe.jpg','Forward','1991-09-18',1.90,96),
+	(4,'Brodie','Grundy','Collingwood Magpies','images/brodie_grundy.jpg','Ruckman','1994-04-15',2.02,100),
+	(5,'Orazio','Fantasia','Essendon Bombers','images/orazio_fantasia.jpg','Forward','1995-09-14',1.78,64),
+	(6,'Marcus','Bontempelli','Western Bulldogs','images/marcus_bontempelli.jpg','Midfield','1995-11-24',1.92,85),
+	(7,'Eddie','Betts','Carlton Blues','images/eddie_betts.jpg','Small Forward','1986-11-26',1.73,74),
+	(8,'Tom','Hawkins','Geelong Cats','images/tom_hawkins.jpg','Full Forward','1988-07-21',1.98,101),
+	(9,'Elliot','Yeo','West Coast Eagles','images/elliot_yeo.jpg','Defender','1993-10-01',1.89,76),
+	(11,'Robbie','Gray','Port Adelaide Power','images/robbie_gray.jpg','Forward','1988-03-30',1.83,87),
+	(12,'Luke','Breust','Hawthorn Hawks','images/luke_breust.jpg','Forward','1990-11-11',1.84,84),
+	(13,'Buddy','Franklin','Sydney Swans','images/buddy_franklin.jpg','Forward','1987-01-30',1.96,100);
 
 /*!40000 ALTER TABLE `card_details` ENABLE KEYS */;
 UNLOCK TABLES;
