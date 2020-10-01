@@ -1,5 +1,7 @@
 <?php
 
+include('includes/functions.php');
+
 $db = new PDO('mysql:host=db;dbname=AFL Player Cards', 'root', 'password');
 
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
@@ -9,8 +11,6 @@ $query = $db->prepare('SELECT `player_first_name`, `player_last_name`, `club`, `
 $query->execute();
 
 $player_cards = $query->fetchAll();
-
-include('includes/functions.php');
 
 ?>
 
