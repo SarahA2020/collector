@@ -7,14 +7,14 @@ body {
 	margin: 0;
 	font-size: 62.5%;
 	height: 100vh;
-	background-image: url("images/afl_background_7.jpg");
+	background-image: url("images/afl_background.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 }
 
 h1 {
-	color: #f0f8f8;
+	color: #ffffff;
 	font-family: 'Rubik', Arial, sans-serif;
 	font-size: 2rem;
 	text-transform: uppercase;
@@ -23,7 +23,7 @@ h1 {
 }
 
 .intro {
-	color: #f0f8f8;
+	color: #ffffff;
 	font-family: 'Poppins', Arial, sans-serif;
 	font-size: 1rem;
 	line-height: 1.7rem;
@@ -64,7 +64,7 @@ h1 {
 .card {
 	border: solid 10px;
 	border-radius: 25px;
-	box-shadow: 10px 10px 10px #212121;
+	box-shadow: 10px 10px 10px #1c1c1c;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
