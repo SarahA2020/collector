@@ -11,6 +11,7 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
+	position: relative;
 }
 
 a.add {
@@ -55,10 +56,10 @@ h1 {
 	font-size: 2rem;
 	text-transform: uppercase;
 	text-align: center;
-
+	margin-top: 3%;
 }
 
-.intro {
+.intro-main {
 	color: #ffffff;
 	font-family: 'Poppins', Arial, sans-serif;
 	font-size: 1rem;
@@ -245,38 +246,68 @@ img {
 
 /* Styling for Add Card Page */
 
-form {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 40%;
-	background-color: #031246;
+.intro-add {
+	color: #ffffff;
+	font-family: 'Poppins', Arial, sans-serif;
+	font-size: 1rem;
+	line-height: 1.7rem;
+	text-align: center;
+	margin-bottom: 4%;
 }
 
-.pair {
-	font-size: 1rem;
-	line-height: 1.8rem;
+.form_container {
+	background-color: rgba(124, 0, 64, .85);
+	width: 70%;
+	height: 28.3rem;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+
+form {
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-gap: 5% 0;
+	align-items: center;
+	padding-top: 5%;
 }
 
 label {
 	color: #ffffff;
 	font-family: 'Poppins', Arial, sans-serif;
-	padding-right: 2.5%;
-
+	font-size: .9rem;
+	padding-left: 32%;
 }
 
 input {
 	font-family: 'Poppins', Arial, sans-serif;
-	font-size: 0.7rem;
-	width: 46%;
+	font-size: 0.8rem;
+	width: 75%;
+	border: none;
+	border-radius: 3px;
+	padding: 4px 10px;
 }
 
 .click_me {
-
-	width: 8%;
-	height: 5%;
+	width: 22%;
 	background-color: yellow;
+	font-family: 'Poppins', Arial, sans-serif;
+	font-size: 0.8rem;
+	grid-column: 2;
+	padding: 7px;
+	margin-top: 4px;
+	border: none;
+	border-radius: 5px;
+}
 
+.return-button {
+	font-family: 'Poppins', Arial, sans-serif;
+	font-size: 0.9rem;
+	color: #000;
+	border: none;
+	border-radius: 8px;
+	background-color: #03ceaf;
+	padding: 11px;
+	position: absolute;
+	top: -2%;
+	left: 2%;
 }

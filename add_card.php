@@ -13,49 +13,40 @@
 
     <body>
 
-        <nav class="return">
-            <a href="index.php">Return to collection</a>
-        </nav>
+            <a href="index.php"><button class="return-button">Return to Collection</button></a>
+
 
         <h1>Add Your Own Card!</h1>
 
-        <p class="intro">Add your own AFL player card below by filling in the form and hitting submit:</p>
+        <p class="intro-add">Add your own AFL player card below by filling in the form and clicking 'Add Card':</p>
 
         <div class="form_container">
             <form action="card_added.php" method="POST">
-                <div class="pair">
                     <label for="player_first_name">Player's First Name</label>
-                    <input type="text" name="player_first_name" placeholder="First name">
-                </div>
-                <div class="pair">
+                    <input class="input" type="text" name="player_first_name" placeholder="First name">
+
                     <label for="player_last_name">Player's Last Name</label>
-                    <input type="text" name="player_last_name" placeholder="Last name">
-                </div>
-                <div class="pair">
+                    <input class="input" type="text" name="player_last_name" placeholder="Last name">
+
                     <label for="club">Which club do they play for?</label>
-                    <input type="text" name="club" placeholder="Team">
-                </div>
-                <div class="pair">
+                    <input class="input" type="text" name="club" placeholder="Team">
+
                     <label for="image">Upload their photo</label>
-                    <input type="text" name="image" placeholder="url or file path">
-                </div>
-                <div class="pair">
+                    <input class="input" type="text" name="image" placeholder="url or file path">
+
                     <label for="position">What position do they play?</label>
-                    <input type="text" name="position" placeholder="Midfield, Forward, Defender, etc.">
-                </div>
-                <div class="pair">
+                    <input class="input" type="text" name="position" placeholder="Midfield, Forward, Defender, etc.">
+
                     <label for="DOB">What is their date of birth?</label>
                     <input type="text" name="DOB" placeholder="e.g. 1994-11-28">
-                </div>
-                <div class="pair">
+
                     <label for="height">What is their height?</label>
-                    <input type="text" name="height" placeholder="in meters">
-                </div>
-                <div class="pair">
+                    <input class="input" type="text" name="height" placeholder="in meters">
+
                     <label for="weight">What is their weight?</label>
-                    <input type="text" name="weight" placeholder="in kg">
-                </div>
-                    <input type="submit" class="click_me">
+                    <input class="input" type="text" name="weight" placeholder="in kg">
+
+                <button type="submit" class="click_me">Add Card</button>
             </form>
         </div>
     </body>

@@ -31,8 +31,9 @@ $player_cards = $query->fetchAll();
             <a class="add" href="add_card.php">Add new player card!</a>
         </nav>
 
-        <h1>AFL Player Cards Collection</h1>
-        <p class="intro">Welcome to my awesome collection of Australian Rules Football player cards. Each card displays the photo and stats of the some of the best players in the league.</p>
+        <h1>AFL Players Card Collection</h1>
+        <p class="intro-main">Welcome to my awesome collection of Australian Football League player cards.</p>
+        <p class="intro-main">Each card displays the photo and stats of the some of the best players in the league.</p>
 
         <section class="grid_container">
 
