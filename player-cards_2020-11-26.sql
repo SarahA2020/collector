@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.31)
 # Database: player-cards
-# Generation Time: 2020-11-26 10:15:43 +0000
+# Generation Time: 2020-11-26 14:10:15 +0000
 # ************************************************************
 
 
@@ -57,7 +57,8 @@ VALUES
 	(13,'Buddy','Franklin','Sydney Swans','images/buddy_franklin.jpg','Forward','1987-01-30',1.96,100),
 	(98,'Tim','Membrey','St Kilda Saints','https://alchetron.com/cdn/tim-membrey-3cab2bad-0f5a-4ef1-b479-b7d4407e018-resize-750.jpg','Forward','1994-05-26',1.88,87),
 	(99,'Majak','Daw','North Kangaroos','https://upload.wikimedia.org/wikipedia/commons/f/ff/Majak_Daw_2018.2.jpg','Ruckman','1991-03-11',1.95,94),
-	(100,'Eric','Hipwood','Brisbane Lions','https://media.apnarm.net.au/media/images/2017/03/03/b88619376z1_20170303103920_000gcbhflfm2-0-i5zmf7rdffsu92u2un2_t1880.jpg','Forward','1997-09-13',2.02,92);
+	(100,'Eric','Hipwood','Brisbane Lions','https://media.apnarm.net.au/media/images/2017/03/03/b88619376z1_20170303103920_000gcbhflfm2-0-i5zmf7rdffsu92u2un2_t1880.jpg','Forward','1997-09-13',2.02,92),
+	(102,'Tex','Walker','Adelaide Crows','https://i.pinimg.com/236x/97/e4/de/97e4de4d26400aaddd8c141b3e2cf95a--rugby-crows.jpg','Forward','1990-04-25',1.94,100);
 
 /*!40000 ALTER TABLE `card_details` ENABLE KEYS */;
 UNLOCK TABLES;
