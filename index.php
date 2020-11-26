@@ -2,7 +2,7 @@
 
 include('includes/functions.php');
 
-$db = new PDO('mysql:host=db;dbname=AFL Player Cards', 'root', 'password');
+$db = new PDO('mysql:host=db;dbname=player-cards', 'root', 'password');
 
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
@@ -27,6 +27,10 @@ $player_cards = $query->fetchAll();
     </head>
 
     <body>
+        <nav>
+            <a class="add" href="add_card.php">Add new player card!</a>
+        </nav>
+
         <h1>AFL Player Cards Collection</h1>
         <p class="intro">Welcome to my awesome collection of Australian Rules Football player cards. Each card displays the photo and stats of the some of the best players in the league.</p>
 
@@ -34,8 +38,8 @@ $player_cards = $query->fetchAll();
 
             <?php
 
-            foreach($player_cards as $new_player_card) {
-                echo display_card($new_player_card);
+            foreach($player_cards as $existing_player_card) {
+                echo display_card($existing_player_card);
             }
 
             ?>

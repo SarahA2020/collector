@@ -13,6 +13,42 @@ body {
 	background-position: center;
 }
 
+a.add {
+	display: block;
+	position: absolute;
+	top:75px;
+	left: 84%;
+	color: #ffffff;
+	text-align: center;
+	font-family: 'Poppins', Arial, sans-serif;
+	font-size: 1rem;
+	background-color: #d3260e;
+	text-decoration: none;
+	width: 120px;
+	height: 66px;
+	border-radius: 30px;
+	transform: rotate(17deg);
+	padding-top: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+	a.add {
+		top:75px;
+		font-size: 0.87rem;
+		width: 108px;
+		height: 59px;
+	}
+}
+
+@media screen and (max-width: 855px) {
+	a.add {
+		top:100px;
+		font-size: 0.77rem;
+		width: 96px;
+		height: 55px;
+	}
+}
+
 h1 {
 	color: #ffffff;
 	font-family: 'Rubik', Arial, sans-serif;
@@ -28,18 +64,18 @@ h1 {
 	font-size: 1rem;
 	line-height: 1.7rem;
 	text-align: center;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
 .grid_container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-gap: 40px 28px;
+	grid-gap: 50px 30px;
 	align-self: center;
 	width: 85%;
 	margin: 0 auto;
-	margin-top: 35px;
+	margin-top: 50px;
 	margin-bottom: 35px;
 }
 
@@ -169,4 +205,78 @@ img {
 	color: #ffffff;
 	background-color: #000000;
 	border-color: #008aab;
+}
+
+.Brisbane_Lions {
+	color: #ffe09a;
+	background-color: #7c0040;
+	border-color: #0055a3;
+}
+
+.Adelaide_Crows {
+	color: #fed102;
+	background-color: #002b5c;
+	border-color: #e21937;
+}
+
+.North_Kangaroos {
+	color: #ffffff;
+	background-color: #1a3b8e;
+	border-color: #ffffff;
+}
+
+.GWS_Giants {
+	color: #ffffff;
+	background-color: #f47920;
+	border-color: #384752;
+}
+
+.St_Kilda_Saints {
+	color: #000000;
+	background-color: #ffffff;
+	border-color: #ed1b2f;
+}
+
+.Gold_Coast_Suns {
+	color: #ffffff;
+	background-color: #ee3728;
+	border-color: #ffdf16;
+}
+
+/* Styling for Add Card Page */
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 40%;
+	background-color: #031246;
+}
+
+.pair {
+	font-size: 1rem;
+	line-height: 1.8rem;
+}
+
+label {
+	color: #ffffff;
+	font-family: 'Poppins', Arial, sans-serif;
+	padding-right: 2.5%;
+
+}
+
+input {
+	font-family: 'Poppins', Arial, sans-serif;
+	font-size: 0.7rem;
+	width: 46%;
+}
+
+.click_me {
+
+	width: 8%;
+	height: 5%;
+	background-color: yellow;
+
 }
