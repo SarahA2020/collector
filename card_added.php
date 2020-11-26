@@ -2,7 +2,7 @@
 
 include('includes/functions.php');
 
-$db = new PDO('mysql:host=db;dbname=AFL Player Cards', 'root', 'password');
+$db = new PDO('mysql:host=db;dbname=player-cards', 'root', 'password');
 
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
