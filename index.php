@@ -25,17 +25,16 @@ $player_cards = $query->fetchAll();
         <link href="https://fonts.googleapis.com/css2?family=Kulim+Park&family=Poppins&family=Ubuntu&display=swap" rel="stylesheet">
         <meta name=’viewport” content=”width=device-width, initial-scale=0.1”>
     </head>
-
     <body>
-        <nav>
-            <a class="add" href="add_card.php">Add new player card!</a>
-        </nav>
-
         <h1>AFL Players Card Collection</h1>
         <p class="intro-main">Welcome to my awesome collection of Australian Football League player cards.</p>
         <p class="intro-main">Each card displays the photo and stats of the some of the best players in the league.</p>
-
-        <section class="grid_container">
+        <div class="button-container">
+            <a href="add_card.php">
+                <button class="add-and-return-button add-button">Add Card!</button>
+            </a>
+        </div>
+        <section class="card-grid_container">
 
             <?php
 
@@ -46,8 +45,6 @@ $player_cards = $query->fetchAll();
             ?>
 
         </section>
-
     </body>
-
 </html>
 

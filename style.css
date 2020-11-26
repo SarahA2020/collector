@@ -11,43 +11,6 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
-	position: relative;
-}
-
-a.add {
-	display: block;
-	position: absolute;
-	top:75px;
-	left: 84%;
-	color: #ffffff;
-	text-align: center;
-	font-family: 'Poppins', Arial, sans-serif;
-	font-size: 1rem;
-	background-color: #d3260e;
-	text-decoration: none;
-	width: 120px;
-	height: 66px;
-	border-radius: 30px;
-	transform: rotate(17deg);
-	padding-top: 12px;
-}
-
-@media screen and (max-width: 1200px) {
-	a.add {
-		top:75px;
-		font-size: 0.87rem;
-		width: 108px;
-		height: 59px;
-	}
-}
-
-@media screen and (max-width: 855px) {
-	a.add {
-		top:100px;
-		font-size: 0.77rem;
-		width: 96px;
-		height: 55px;
-	}
 }
 
 h1 {
@@ -57,6 +20,43 @@ h1 {
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: 3%;
+}
+
+@media screen and (max-width: 670px) {
+	h1 {
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h1 {
+		margin-top: 5%;
+	}
+}
+
+@media screen and (max-width: 517px) {
+	h1 {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	h1 {
+		margin-top: 6%;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	h1 {
+		margin-top: 7%;
+	}
+}
+
+@media screen and (max-width: 330px) {
+	h1 {
+		font-size: 1.6rem;
+		margin: 8% 6% 5% 6%;
+	}
 }
 
 .intro-main {
@@ -69,31 +69,62 @@ h1 {
 	margin-right: 20%;
 }
 
-.grid_container {
+@media screen and (max-width: 670px) {
+	.intro-main {
+		font-size: .9rem;
+	}
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 26px;
+}
+
+.add-and-return-button {
+	color: #000000;
+	font-family: 'Poppins', Arial, sans-serif;
+	text-decoration: none;
+	border: none;
+	border-radius: 30px;
+	padding: 17px;
+	transition: .3s;
+}
+
+.add-button {
+	font-size: 1.3rem;
+	background-color: #03ceaf;
+	width: 147px;
+}
+
+.add-button:hover {
+	background-color: #7c0040;
+	color: white;
+}
+
+.card-grid_container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 50px 30px;
 	align-self: center;
 	width: 85%;
-	margin: 0 auto;
-	margin-top: 50px;
-	margin-bottom: 35px;
+	margin: 45px auto;
 }
 
 @media screen and (max-width: 1240px) {
-	.grid_container {
+	.card-grid_container {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
 
 @media screen and (max-width: 925px) {
-	.grid_container {
+	.card-grid_container {
 		grid-template-columns: 1fr 1fr;
 	}
 }
 
 @media screen and (max-width: 610px) {
-	.grid_container {
+	.card-grid_container {
 		grid-template-columns: 1fr;
 	}
 }
@@ -252,15 +283,106 @@ img {
 	font-size: 1rem;
 	line-height: 1.7rem;
 	text-align: center;
-	margin-bottom: 4%;
+	margin: 0 2% 2% 2%;
+
+}
+
+@media screen and (max-width: 720px) {
+	.intro-add {
+		margin: 3% 4% 4% 4%;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	.intro-add {
+		font-size: .85rem;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.intro-add {
+		margin: 3% 6% 4% 6%;
+	}
+}
+
+@media screen and (max-width: 517px) {
+	.intro-add {
+		font-size: .75rem;
+	}
+}
+
+@media screen and (max-width: 330px) {
+	.intro-add {
+		font-size: .7rem;
+	}
 }
 
 .form_container {
 	background-color: rgba(124, 0, 64, .85);
 	width: 70%;
-	height: 28.3rem;
+	height: 29rem;
 	margin: 0 auto;
 	border-radius: 5px;
+}
+
+@media screen and (max-width: 1380px) {
+	.form_container {
+		height: 28.5rem;
+	}
+}
+
+@media screen and (max-width: 1260px) {
+	.form_container {
+		height: 28.2rem;
+	}
+}
+
+@media screen and (max-width: 1140px) {
+	.form_container {
+		height: 27.6rem;
+	}
+}
+
+@media screen and (max-width: 1082px) {
+	.form_container {
+		height: 26.8rem;
+	}
+}
+
+@media screen and (max-width: 993px) {
+	.form_container {
+		height: 25.3rem;
+	}
+}
+
+@media screen and (max-width: 919px) {
+	.form_container {
+		height: 24.8rem;
+	}
+}
+
+@media screen and (max-width: 828px) {
+	.form_container {
+		height: 24rem;
+	}
+}
+
+@media screen and (max-width: 743px) {
+	.form_container {
+		height: 37rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.form_container {
+		height: 33.5rem;
+	}
+}
+
+@media screen and (max-width: 441px) {
+	.form_container {
+		height: 32.5rem;
+	}
 }
 
 form {
@@ -271,11 +393,90 @@ form {
 	padding-top: 5%;
 }
 
+@media screen and (max-width: 1140px) {
+	form {
+		grid-gap: 5% 1%;
+	}
+}
+
+@media screen and (max-width: 1083px) {
+	form {
+		grid-gap: 5% 2%;
+	}
+}
+
+@media screen and (max-width: 994px) {
+	form {
+		grid-gap: 5% 2%;
+	}
+}
+
+@media screen and (max-width: 920px) {
+	form {
+		grid-gap: 5% 5%;
+	}
+}
+
+@media screen and (max-width: 821px) {
+	form {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 5% 0;
+	}
+}
+
+@media screen and (max-width: 743px) {
+	form {
+		grid-template-columns: 100%;
+		grid-gap: 2%;
+	}
+}
+
 label {
 	color: #ffffff;
 	font-family: 'Poppins', Arial, sans-serif;
 	font-size: .9rem;
 	padding-left: 32%;
+}
+
+@media screen and (max-width: 1083px) {
+	label {
+		padding-left: 30%;
+		font-size: .85rem;
+	}
+}
+
+@media screen and (max-width: 994px) {
+	label {
+		padding-left: 26%;
+		font-size: .83rem;
+	}
+}
+
+@media screen and (max-width: 920px) {
+	label {
+		padding-left: 20%;
+		font-size: .8rem;
+	}
+}
+
+@media screen and (max-width: 821px) {
+	label {
+		padding-left: 25%;
+	}
+}
+
+@media screen and (max-width: 743px) {
+	label {
+		grid-column: 1;
+		padding-left: 20%;
+		padding-top: 4.5px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	label {
+		font-size: .7rem;
+	}
 }
 
 input {
@@ -287,7 +488,45 @@ input {
 	padding: 4px 10px;
 }
 
-.click_me {
+@media screen and (max-width: 1083px) {
+	input {
+		font-size: .75rem;
+	}
+}
+
+@media screen and (max-width: 994px) {
+	input {
+		font-size: .73rem;
+	}
+}
+
+@media screen and (max-width: 920px) {
+	input {
+		font-size: .7rem;
+	}
+}
+
+@media screen and (max-width: 821px) {
+	input {
+		width: 73%;
+	}
+}
+
+@media screen and (max-width: 743px) {
+	input {
+		grid-column: 1;
+		width: 60%;
+		margin-left: 20%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	input {
+		font-size: .6rem;
+	}
+}
+
+.form-add-card-button {
 	width: 22%;
 	background-color: yellow;
 	font-family: 'Poppins', Arial, sans-serif;
@@ -299,15 +538,72 @@ input {
 	border-radius: 5px;
 }
 
+@media screen and (max-width: 828px) {
+	.form-add-card-button {
+		font-size: .6rem;
+	}
+}
+
+@media screen and (max-width: 821px) {
+	.form-add-card-button {
+		font-size: .7rem;
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 786px) {
+	.form-add-card-button {
+		font-size: .6rem;
+	}
+}
+
+@media screen and (max-width: 743px) {
+	.form-add-card-button {
+		grid-column: 1;
+		font-size: .7rem;
+		width: 17%;
+		margin-top: 3%;
+		margin-left: 20%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.form-add-card-button {
+		font-size: .6rem;
+	}
+}
+
+@media screen and (max-width: 517px) {
+	.form-add-card-button {
+		width: 20%;
+	}
+}
+
+@media screen and (max-width: 441px) {
+	.form-add-card-button {
+		width: 24%;
+	}
+}
+
+@media screen and (max-width: 370px) {
+	.form-add-card-button {
+		width: 27%;
+	}
+}
+
+@media screen and (max-width: 330px) {
+	.form-add-card-button {
+		width: 31%;
+	}
+}
+
 .return-button {
-	font-family: 'Poppins', Arial, sans-serif;
-	font-size: 0.9rem;
-	color: #000;
-	border: none;
-	border-radius: 8px;
-	background-color: #03ceaf;
-	padding: 11px;
-	position: absolute;
-	top: -2%;
-	left: 2%;
+	font-size: .85rem;
+	background-color: #7af8f2;
+	width: 134px;
+}
+
+.return-button:hover {
+	background-color: #d94201;
+	color: #ffffff;
 }

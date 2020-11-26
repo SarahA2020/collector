@@ -12,14 +12,8 @@
     </head>
 
     <body>
-
-            <a href="index.php"><button class="return-button">Return to Collection</button></a>
-
-
         <h1>Add Your Own Card!</h1>
-
         <p class="intro-add">Add your own AFL player card below by filling in the form and clicking 'Add Card':</p>
-
         <div class="form_container">
             <form action="card_added.php" method="POST">
                     <label for="player_first_name">Player's First Name</label>
@@ -46,8 +40,13 @@
                     <label for="weight">What is their weight?</label>
                     <input class="input" type="text" name="weight" placeholder="in kg">
 
-                <button type="submit" class="click_me">Add Card</button>
+                <button type="submit" class="form-add-card-button">Add Card</button>
             </form>
+        </div>
+        <div class="button-container">
+            <a href="index.php">
+                <button class="add-and-return-button return-button">Return Home</button>
+            </a>
         </div>
     </body>
 </html>
